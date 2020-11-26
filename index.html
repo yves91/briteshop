@@ -5,6 +5,7 @@
 <title>Briteshop | Perfect for your pockets!</title>
 
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,22 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
 
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<!--script>
-
-function darkMode() {
-	//alert('Works')
-	document.body.style.backgroundColor = "#353535";
-	document.querySelector('.cookiesBar').style.backgroundColor = "#353535";
-	document.querySelector('.menuItems').style.backgroundColor = "#353535";
-	document.querySelector('.nav').style.backgroundColor = "#353535";
-	document.querySelector('h3').style.color = "#fff";
-}
-
-</script-->
 
 
 </head>
@@ -40,21 +27,83 @@ function darkMode() {
 <header>
 	<div>
 		<ul class="cookiesBar">
-			<!--li><a class="cookiesBarText" href="#" onclick="darkMode()">Dark Mode</a></li-->
 			<li><a class="cookiesBarText" href="#">Sign In</a></li>
 			<li><a class="cookiesBarText" href="#">Store locator</a></li>
 			<li><a class="cookiesBarText" href="#">Contact Us</a></li>
 			<li><a class="cookiesBarText" href="#">FAQ's</a></li>
-			<!--li><div><input type="text" class="searchQuery" placeholder="Search" name="search"><button type="submit"><i class="fa fa-search"></i></button></div>
-			</li-->
-
-
+			
 		</ul>	
 	</div>
 	
 			
 
+<div id="goToCart">
+<button class="cart-close" id="cartClose" onclick="closeCart()">X</button>	
 
+<div id ="cartTitle"><h2>Your Basket<h2></div>
+
+	<div id="cart">	
+	
+		<form id="userInfo">
+		
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" value="">
+			
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" value="">
+			
+			<label for="cardnumber">Card number:</label><br>
+			<input type="text" id="cardnumber" name="cardnumber" value="">
+			
+			<label for="cardholder">Card nameholder:</label><br>
+			<input type="text" id="cardholder" name="cardholder" value="">
+			
+			<label for="cvvnumber">CVV number:</label><br>
+			<input type="text" id="cvvnumber" name="cvvnumber" value="">
+			
+			<label for="address1">Address Line 1:</label><br>
+			<input type="text" id="address1" name="address1" value="">
+			
+			<label for="address2">Address Line 2:</label><br>
+			<input type="text" id="address2" name="address2" value="">
+			
+			<label for="emailaddress">Email Address:</label><br>
+			<input type="text" id="emailaddress" name="emailaddress" value="">
+		</form>
+	
+	<div id="emptyCartText"><p>Your cart is empty</p></div>
+
+	<div id="cartSummary">
+		<ul id="cart1">
+			<li id="cart-item"></li>
+			<li id="cart-quantity"></li>
+			<li id="cart-currency"></li>
+			<hr>
+		</ul>
+		
+		<ul id="cart2">
+			<li id="cart-item-2"></li>
+			<li id="cart-quantity-2"></li>
+			<li id="cart-currency-2"></li>
+			<hr>
+		</ul>
+		
+		<ul id="cart3">
+			<li id="cart-item-3"></li>
+			<li id="cart-quantity-3"></li>
+			<li id="cart-currency-3"></li>
+			<hr>
+		</ul>	
+		
+		<input id="submitButton" type="submit" onclick="confirmPurchase()"></input>
+
+	</div>
+	
+	<p id="confirmationMessage">Thank you for shopping with Briteshop. Your order will soon be dispatched.</p>
+
+	</div>
+	
+</div>
 
 	
 	<div class="nav">			
@@ -66,6 +115,7 @@ function darkMode() {
 					<div>
 						<input type="text" class="searchQuery" placeholder="Search" name="search">
 						<button type="submit"><i class="fa fa-search"></i></button>
+						<li><button id="cart"  onclick="openCart()">&#128722;</button></li>
 					</div>
 				</li>
 			</div>
@@ -77,6 +127,7 @@ function darkMode() {
 				<li class="menuItems"><a href="#">Club Card</a></li>
 				<li class="menuItems"><a href="#">Special Offers</a></li>
 				<li class="menuItems"><a href="#">Home Delivery</a></li>
+				
 		</ul>
 	</div>
 </header>
@@ -108,34 +159,67 @@ function darkMode() {
 	</section>
 	
 
-	<!--3x3 Products-->
+		
+	<!--3x3 Products - PURCHASE-->
 	<section class="container" id="products">
 	
 			<div class ="item">
-				<!--div id="productImage"--><img id="productImage" src="https://yves91.github.io/briteshop/assets/food.jpg"><!--/div-->
+				<img id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg"><!--/div-->
 					<div class="productDescription">
-						<h3>Food</h3>
-						<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-					</div>
+				
+						
+						
+						<h3 id="item">12x pack chicken wings</h3>	
+							<br>
+							<div class="itemQuantity"><input type="number" id="quantity" value="0"></input></div>
+							<p id="unitCost"></p>
+							<div class="itemTotalValue"><input id="itemTotal" value=""></input></div>	
+							<p>£2</p>
+							<br>	
+							<button class="addCart" onclick="setData()">Add</button>
+						</div>
+					
 			</div>
 			
 			<div class ="item">
-				<!--div id="productImage"--><img id="productImage" src="https://yves91.github.io/briteshop/assets/clothes.jpg"><!--/div-->
+				<img id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg"><!--/div-->
 					<div class="productDescription">
-						<h3>Clothes</h3>
-						<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						
+						
+							<h3 id="item">4x pack blueberry muffins</h3>	
+							<br>
+							<div class="itemQuantity"><input type="number" id="quantity2" value="0"></input></div>
+							<p id="unitCost2"></p>
+							<div class="itemTotalValue"><input id="itemTotal2" value=""></input></div>	
+							<p>£2</p>
+							<br>	
+							<button class="addCart" onclick="setData()">Add</button>
+
+						</div>
 				</div>
-			</div>
-			
 				<div class ="item">
-				<!--div id="productImage"--><img id="productImage" src="https://yves91.github.io/briteshop/assets/gadgets.jpg"><!--/div-->
+				<img id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg"><!--/div-->
 					<div class="productDescription">
-						<h3>Gadgets</h3>
-						<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						
+						
+							<h3 id="item">8x Heineken Beer</h3>	
+								<br>
+								<div class="itemQuantity"><!--button>-</button--> <input type="number" id="quantity3" value="0"></input> <!--button>+</button--></div>
+								<p id="unitCost3"></p>
+								<div class="itemTotalValue"><input id="itemTotal3" value=""></input></div>	
+								<p>£10</p>
+								<br>	
+								<button class="addCart" onclick="setData()">Add</button>
+
+						</div>
 				</div>
 				
-		</div>
+				
+			</div>
+			
+			
 	</section>
+	
 	
 	<section class="container">
 		<div>
@@ -145,12 +229,16 @@ function darkMode() {
 	</section>
 
 
-<!--2x2 Products-->
+<br>
+
+
+	<!--2x2 Products-->
+
 	<section class="container" id="products">
 
 	
 		<div class ="item">
-			<!--div id="productImage"--><img id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg"><!--/div-->
+			<img id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg">
 				<div class="productDescription">
 					<h3>Kids</h3>
 					<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
@@ -158,7 +246,7 @@ function darkMode() {
 		</div>
 		
 		<div class ="item">
-			<!--div id="productImage"--><img id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg"><!--/div-->
+			<img id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg">
 				<div class="productDescription">
 					<h3>Drinks</h3>
 					<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
