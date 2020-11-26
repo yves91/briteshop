@@ -441,7 +441,6 @@ li{
 	border-radius: 20px;
 	border: none;
 	padding: 10px;
-	cursor:pointer;
 }
 
 #cartSummary{
@@ -473,6 +472,7 @@ li{
     font-size: 20px;
     font-weight: bold;
 	margin: 0 auto;
+    cursor: pointer;
 }
 
 /*SHOPPING CART CSS - END*/
