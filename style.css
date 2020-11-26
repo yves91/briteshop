@@ -348,10 +348,137 @@ li{
 		display:none;
 	}
 }
-.dark-mode {
-  background-color: black;
-  color: white;
+
+
+/*SHOPPING CART CSS - START*/
+
+.shoppingCart{
+	display: flex;
+	justify-content: space-around;
+    text-align: center;
 }
+
+#userInfo{
+	font-size:20px;
+	text-align: center;
+}
+
+#userInfo>label{
+	display:block;
+	padding:4px;
+	
+	}
+
+#goToCart{
+	display: flex;
+	justify-content: center;
+   background-color: #17cc3e;
+    text-align: center;
+    width: 100%;
+	position: absolute;
+	z-index:99;
+	display:none; 
+	text-align: left;
+}
+
+#quantity, #quantity2, #quantity3{
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    width: 50%;
+    font-size: 20px;
+	border: none;
+    border-radius: 10px;
+}
+
+
+#prod1, #prod2, #prod3{
+	padding: 10px;
+}
+
+#cartTitle{
+	display: flex;		
+	justify-content: center;
+	color:#fff;
+	font-size:20px;
+}
+
+#emptyCartText{
+	display:none;
+}
+
+
+#confirmationMessage{
+	display:none;
+}
+
+.itemTotalValue{
+	display:none;
+}
+
+.addCart{
+	font-size:15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    color: #929090;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#cart{
+	display: flex;
+	justify-content: space-evenly;
+	background-color:transparent;
+	border-radius: 20px;
+	border: none;
+	padding: 10px;
+	cursor:pointer;
+}
+
+#cartSummary{
+    background-color: #fff;
+    height: 100%;
+    padding-bottom: 42px;
+	margin:10px;
+	border-radius: 10px;
+}
+
+#cartClose{
+    font-size: 42px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+	color: #fff;
+	cursor:pointer;
+}
+
+#submitButton{
+	display: block;
+	margin-top: 20px;
+	background-color: #17cc3e;
+	color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+	font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+	margin: 0 auto;
+}
+
+/*SHOPPING CART CSS - END*/
+
+
+
 
 #products{
 	color: #fff !important;
@@ -473,3 +600,4 @@ li{
 		color: #929090;
 		margin-top: 80px;
 }
+
