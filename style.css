@@ -379,6 +379,7 @@ li{
 	z-index:99;
 	display:none; 
 	text-align: left;
+	border-radius: 10px;
 }
 
 #quantity, #quantity2, #quantity3{
