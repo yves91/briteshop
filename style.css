@@ -67,10 +67,10 @@ body{
 
 button {
 	height: 60px;
-    width: 60px;
-    border-radius: 40px;
-    background-color: #17cc3e;
-    border: none;
+	width: 60px;
+	border-radius: 40px;
+	background-color: #17cc3e;
+	border: none;
 	font-size: 25px;
 }
 
@@ -432,8 +432,8 @@ li{
 	margin-top: 10px;
 	color: #929090;
 	font-weight: bold;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	/*padding-bottom: 20px;
+	padding-top: 20px;*/
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
