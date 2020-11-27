@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
 
 <title>Briteshop | Perfect for your pockets!</title>
 
@@ -11,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +20,7 @@
 
 <!--Header & menu-->
 
-<div id="main">
+<body><div id="main">
 
 <header>
 	<div>
@@ -40,7 +38,7 @@
 <div id="goToCart">
 <button class="cart-close" id="cartClose" onclick="closeCart()">X</button>	
 
-<div id ="cartTitle"><h2>Your Basket<h2></div>
+<div id="cartTitle"><h2>Your Basket</h2><h2></h2></div>
 
 	<div id="cart">	
 	
@@ -95,7 +93,7 @@
 			<hr>
 		</ul>	
 		
-		<input id="submitButton" type="submit" onclick="confirmPurchase()"></input>
+		<input id="submitButton" type="submit" onclick="confirmPurchase()">
 
 	</div>
 	
@@ -115,7 +113,6 @@
 					<div>
 						<input type="text" class="searchQuery" placeholder="Search" name="search">
 						<button type="submit"><i class="fa fa-search"></i></button>
-						<li><button id="cart"  onclick="openCart()">&#128722;</button></li>
 					</div>
 				</li>
 			</div>
@@ -127,23 +124,26 @@
 				<li class="menuItems"><a href="#">Club Card</a></li>
 				<li class="menuItems"><a href="#">Special Offers</a></li>
 				<li class="menuItems"><a href="#">Home Delivery</a></li>
-				
 		</ul>
 	</div>
+			
+				
+		</ul>
+	</header></div>
 	
 	
 	
-</header>
+
 
 
 
 	<!--Jumbotron section-->
 	<section class="container" id="jumbotron">
 		<div id="jumbotronText">
-		<h2>Great deals this weekend!<h2>
+		<h2>Great deals this weekend!</h2><h2>
 		<p class="jumboSub">Buy one get one free on selected items</p>
 		<button class="hero-cta">See Deals</button>
-		</div>
+		</h2></div>
 		
 
 		<div id="jumbotronImage"><img id="jumbotronImage" src="https://yves91.github.io/briteshop/assets/heroimage.jpg"></div>
@@ -162,7 +162,7 @@
 	<!--3x3 Products - PURCHASE-->
 	<section class="container" id="products">
 	
-			<div class ="item">
+			<div class="item">
 				<img id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg"><!--/div-->
 					<div class="productDescription">
 				
@@ -170,9 +170,9 @@
 						
 						<h3 id="item">12x pack chicken wings</h3>	
 							<br>
-							<div class="itemQuantity"><input type="number" id="quantity" value="0"></input></div>
+							<div class="itemQuantity"><input type="number" id="quantity" value="0"></div>
 							<p id="unitCost"></p>
-							<div class="itemTotalValue"><input id="itemTotal" value=""></input></div>	
+							<div class="itemTotalValue"><input id="itemTotal" value=""></div>	
 							<p>£2</p>
 							<br>	
 							<button class="addCart" onclick="setData()">Add</button>
@@ -180,32 +180,32 @@
 					
 			</div>
 			
-			<div class ="item">
+			<div class="item">
 				<img id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg"><!--/div-->
 					<div class="productDescription">
 						
 						
 							<h3 id="item">4x pack blueberry muffins</h3>	
 							<br>
-							<div class="itemQuantity"><input type="number" id="quantity2" value="0"></input></div>
+							<div class="itemQuantity"><input type="number" id="quantity2" value="0"></div>
 							<p id="unitCost2"></p>
-							<div class="itemTotalValue"><input id="itemTotal2" value=""></input></div>	
+							<div class="itemTotalValue"><input id="itemTotal2" value=""></div>	
 							<p>£2</p>
 							<br>	
 							<button class="addCart" onclick="setData()">Add</button>
 
 						</div>
 				</div>
-				<div class ="item">
+				<div class="item">
 				<img id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg"><!--/div-->
 					<div class="productDescription">
 						
 						
 							<h3 id="item">8x Heineken Beer</h3>	
 								<br>
-								<div class="itemQuantity"><!--button>-</button--> <input type="number" id="quantity3" value="0"></input> <!--button>+</button--></div>
+								<div class="itemQuantity"><!--button>-</button--> <input type="number" id="quantity3" value="0"> <!--button>+</button--></div>
 								<p id="unitCost3"></p>
-								<div class="itemTotalValue"><input id="itemTotal3" value=""></input></div>	
+								<div class="itemTotalValue"><input id="itemTotal3" value=""></div>	
 								<p>£10</p>
 								<br>	
 								<button class="addCart" onclick="setData()">Add</button>
@@ -214,7 +214,7 @@
 				</div>
 				
 				
-			</div>
+			
 			
 			
 	</section>
@@ -236,7 +236,7 @@
 	<section class="container" id="products">
 
 	
-		<div class ="item">
+		<div class="item">
 			<img id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg">
 				<div class="productDescription">
 					<h3>Kids</h3>
@@ -244,7 +244,7 @@
 				</div>
 		</div>
 		
-		<div class ="item">
+		<div class="item">
 			<img id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg">
 				<div class="productDescription">
 					<h3>Drinks</h3>
@@ -264,7 +264,7 @@
 			<div class="footer-col">
 				<h3>Help</h3>
 					<ul>
-						<a href="#"><li>Help & FAQs</li></a>		
+						<a href="#"><li>Help &amp; FAQs</li></a>		
 						<a href="#"><li>Contact us</li></a>
 					</ul>
 				</div>
@@ -283,8 +283,8 @@
 			<div class="footer-col">
 				<h3>Our Website</h3>
 					<ul>
-						<a href="#"><li>Terms & Conditions</li></a>		
-						<a href="#"><li>Privacy & cookies policy</li></a>
+						<a href="#"><li>Terms &amp; Conditions</li></a>		
+						<a href="#"><li>Privacy &amp; cookies policy</li></a>
 						<a href="#"><li>Sitemap</li></a>
 						<a href="#"><li>Accessibility</li></a>
 
@@ -295,7 +295,7 @@
 				<h3>Useful links</h3>
 					<ul>
 						<a href="#"><li>Store locator</li></a>		
-						<a href="#"><li>Refunds & Exchanges</li></a>
+						<a href="#"><li>Refunds &amp; Exchanges</li></a>
 					</ul>
 				</div>
 				
@@ -315,8 +315,9 @@
 				
 		</div>
 			
-	</div>
+	
 
 
 
-</html>
+
+</body></html>
