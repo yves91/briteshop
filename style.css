@@ -11,10 +11,10 @@ body{
 
 .cookiesBar{
 	display: flex;
-    justify-content: flex-end;
-    background-color: #ffffff;
-    color: #fff;
-}
+	justify-content: flex-end;
+	background-color: #ffffff;
+	color: #fff;
+	}
 
 }
 
@@ -45,11 +45,11 @@ body{
 
 .searchQuery{
 	font-family: 'Raleway', sans-serif;
-    width: 700px;
-    height: 60px;
-    border-radius: 40px;
-    padding: 10px;
-    border: 2px solid transparent;
+	width: 700px;
+	height: 60px;
+	border-radius: 40px;
+	padding: 10px;
+	border: 2px solid transparent;
 	font-size: 25px;
 }
 
@@ -97,9 +97,9 @@ button {
 	font-size:20px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	    position: absolute;
-    width: 100%;
-    z-index: 90;
+	position: absolute;
+	width: 100%;
+	z-index: 90;
 }			
 
 label{
@@ -127,11 +127,10 @@ label{
 }	
 		
 .container-menu {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    background-color: #17cc3e;
-
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+	background-color: #17cc3e;
 } 
 		
 			
@@ -178,9 +177,9 @@ label{
 		
 .searchBar{
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	background-color: #e9e9e9;
-    padding: 20px;}
+	padding: 20px;}
 
 h2 {
 	font-size:50px;
@@ -192,26 +191,29 @@ h3 {
 	font-size:30px;
 }
 
+
 a {
 	text-decoration: none;
 	color: #929090;
 }
-.menuItems > a
- {
+
+
+.menuItems > a{
 	text-decoration: none;
-	color: #fff;
-	
+	color: #fff;	
 }
 
-@media only screen and (max-width: 1000px){
+/*@media only screen and (max-width: 1000px){
 	.menuItems > a{
 		
 	}
-}
+}*/
+
 
 hr {
 	margin-top: 40px;
 }
+
 
 li{
 	list-style: none;
@@ -240,12 +242,13 @@ li{
 #jumbotron{
 	display: flex;
 	width:100%;
-    margin-top: 435px;	
+	margin-top: 435px;	
 	height:420px;
 	padding: 30px;
 	/*border: 1px solid #292929;*/
 	color:#fff !important;
-    margin-bottom: 40px;}
+	margin-bottom: 40px;
+}
 
 
 /* START - This will ensure the gap between jumbotron and responsive navbar is not too wide */
@@ -283,7 +286,6 @@ li{
 	padding:20px;
 	border-radius: 10px 0px 0px 10px;
 	text-align: center;
-
 }
 
 @media only screen and (max-width: 1000px){
@@ -307,7 +309,6 @@ li{
 	height: 100%;
 	border-radius: 0px 5px 5px 0px;
 	cursor:pointer;
-
 }
 
 
@@ -327,13 +328,12 @@ li{
 }
 
 #productImage{
-    width: 100%;
-    /* height: 100%; */
-    border-radius: 5px 5px 0px 0px; 
-    object-fit: contain;
-    margin-bottom: -6px;
+	width: 100%;
+	/* height: 100%; */
+	border-radius: 5px 5px 0px 0px; 
+	object-fit: contain;
+	margin-bottom: -6px;
 	cursor:pointer;
-
 }
 
 	
@@ -355,7 +355,7 @@ li{
 .shoppingCart{
 	display: flex;
 	justify-content: space-around;
-    text-align: center;
+	text-align: center;
 }
 
 #userInfo{
@@ -372,9 +372,9 @@ li{
 #goToCart{
 	display: flex;
 	justify-content: center;
-   background-color: #17cc3e;
-    text-align: center;
-    width: 100%;
+	background-color: #17cc3e;
+	text-align: center;
+	width: 100%;
 	position: absolute;
 	z-index:99;
 	display:none; 
@@ -382,15 +382,16 @@ li{
 	border-radius: 10px;
 }
 
+
 #quantity, #quantity2, #quantity3{
 	font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    padding: 4px;
-    width: 50%;
-    font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 4px;
+	width: 50%;
+	font-size: 20px;
 	border: none;
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 
@@ -419,21 +420,22 @@ li{
 }
 
 .addCart{
-	font-size:15px;
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-    width: auto;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 10px;
-    color: #929090;
-    font-weight: bold;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
+	font-size: 15px;
+	/* border-radius: 20px; */
+	border: none;
+	background-color: #fff;
+	width: auto;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 10px;
+	color: #929090;
+	font-weight: bold;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
 }
+
 
 #cart{
 	display: flex;
@@ -445,18 +447,18 @@ li{
 }
 
 #cartSummary{
-    background-color: #fff;
-    height: 100%;
-    padding-bottom: 42px;
+	background-color: #fff;
+	height: 100%;
+	padding-bottom: 42px;
 	margin:10px;
 	border-radius: 10px;
 }
 
 #cartClose{
-    font-size: 42px;
-    background-color: transparent;
-    border: none;
-    margin: 10px;
+	font-size: 42px;
+	background-color: transparent;
+	border: none;
+	margin: 10px;
 	color: #fff;
 	cursor:pointer;
 }
@@ -466,19 +468,17 @@ li{
 	margin-top: 20px;
 	background-color: #17cc3e;
 	color: #fff;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
 	font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 	margin: 0 auto;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /*SHOPPING CART CSS - END*/
-
-
 
 
 #products{
@@ -510,7 +510,6 @@ li{
 	/*padding:20px;*/
 	color:#929090;
 	font-size: 40px;
-
 }
 
 @media only screen and (max-width: 1000px){
@@ -592,13 +591,12 @@ li{
 }
 
 #footer{
-		display: flex-end;
-		background-color: #e9e9e9;
-		font-size:15px;
-		font-weight: bold;
-		letter-spacing: 2px;
-		/*height:500px;*/
-		color: #929090;
-		margin-top: 80px;
+	display: flex-end;
+	background-color: #e9e9e9;
+	font-size:15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	/*height:500px;*/
+	color: #929090;
+	margin-top: 80px;
 }
-
