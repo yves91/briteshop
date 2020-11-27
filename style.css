@@ -290,7 +290,7 @@ li{
 	#jumbotronText{
 		height:100%;
 		border-radius: 10px;
-		/*text-align: center;*/
+		margin-top: 50px;
 	}
 }
 
