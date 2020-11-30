@@ -481,6 +481,12 @@ li{
 	cursor: pointer;
 }
 
+#userInto > label > input{
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
 /*SHOPPING CART CSS - END*/
 
 
