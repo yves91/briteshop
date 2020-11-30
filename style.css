@@ -486,9 +486,10 @@ li{
 }
 
 #userInfo > input{
-    height: 30px;
-    border: none;
-    border-radius: 20px;
+	height: 30px;
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
 }
 
 /*SHOPPING CART CSS - END*/
