@@ -481,7 +481,7 @@ li{
 	cursor: pointer;
 }
 
-#userInto > input{
+#userInfo > input{
     height: 30px;
     border: none;
     border-radius: 20px;
