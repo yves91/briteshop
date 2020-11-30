@@ -183,9 +183,13 @@ label{
 
 h2 {
 	font-size:50px;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 
+#cartTitle > h2 {
+	font-size:40px;
+	cursor:none;
+}
 
 h3 {
 	font-size:30px;
@@ -369,8 +373,8 @@ li{
 #userInfo>label{
 	display:block;
 	padding:4px;
-	
-	}
+	font-size: 25px;	
+}
 
 #goToCart{
 	display: flex;
