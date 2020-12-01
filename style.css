@@ -188,7 +188,7 @@ h2 {
 
 #cartTitle > h2 {
 	font-size:40px;
-	cursor:none;
+	cursor:auto;
 }
 
 h3 {
