@@ -386,6 +386,7 @@ li{
 	z-index:99;
 	display:none; 
 	text-align: left;
+	position: fixed;
 	background-size: cover;
 	margin-top: -38px;
 	height: 100%;
