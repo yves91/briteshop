@@ -3,17 +3,18 @@
 <title>Briteshop | Perfect for your pockets!</title>
 
 <link rel="stylesheet" href="style.css">
+
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script-->
+
 <script src="script.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 
 </head>
@@ -43,21 +44,17 @@
 	<div id="cart">	
 	
 		<form id="userInfo">
-		
-			<label for="fname">First name:</label>
-			<input type="text" id="fname" name="fname" value="">
-			
-			<label for="lname">Last name:</label>
-			<input type="text" id="lname" name="lname" value="">
-			
 			<label for="cardnumber">Card number:</label>
-			<input type="text" id="cardnumber" name="cardnumber" value="">
-			
+			<input type="text" id="cardnumber" name="cardnumber" value="" maxlength="16" oninput="cardNumber()">			
+				
+			<!--label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" value=""-->
+						
 			<label for="cardholder">Card nameholder:</label>
-			<input type="text" id="cardholder" name="cardholder" value="">
+			<input type="text" id="cardholder" name="cardholder" value="" oninput="cardHolder()">
 			
 			<label for="cvvnumber">CVV number:</label>
-			<input type="text" id="cvvnumber" name="cvvnumber" value="">
+			<input type="text" id="cvvnumber" name="cvvnumber" value="" maxlength="3">
 			
 			<label for="address1">Address Line 1:</label>
 			<input type="text" id="address1" name="address1" value="">
@@ -67,9 +64,20 @@
 			
 			<label for="emailaddress">Email Address:</label>
 			<input type="text" id="emailaddress" name="emailaddress" value="">
+		
+		<br><br>
+
+		<div id="cardType">
+			<div id="cardBody">
+				<p id="cardNumber"></p>
+				<p id="cardCompanyType"></p>
+				<p id="cardPersonName"></p>
+			</div>
+		</div>
+		
 		</form>
-	
-	<div id="emptyCartText"><p>Your cart is empty</p></div>
+			
+	<!--div id="emptyCartText"><p>Your cart is empty</p></div-->
 
 	<div id="cartSummary">
 		<ul id="cart1">
@@ -102,7 +110,6 @@
 	</div>
 	
 </div>
-
 	
 	<div class="nav">			
 		<li class="menuItems"><img id="brand" src="https://yves91.github.io/briteshop/assets/briteshop-logo.png"></li>
@@ -133,11 +140,6 @@
 	</header></div>
 	
 	
-	
-
-
-
-
 	<!--Jumbotron section-->
 	<section class="container" id="jumbotron">
 		<div id="jumbotronText">
@@ -154,7 +156,6 @@
 	<section class="container">
 		<div>
 			<h3 class="productTitle">Great Deals</h3>
-			<hr>
 		</div>	
 	</section>
 	
@@ -163,74 +164,67 @@
 	<!--3x3 Products - PURCHASE-->
 	<section class="container" id="products">
 	
-			<div class="item">
-				<img id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg"><!--/div-->
-					<div class="productDescription">
+		<div class="item">
+			
+			<img id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg">
+				<div class="productDescription">
 				
-						
-						
-						<h3 id="item">12x pack chicken wings</h3>	
-							<br>
-							<div class="itemQuantity"><input type="number" id="quantity" value="0" min="0"></div>
-							<p id="unitCost"></p>
-							<div class="itemTotalValue"><input id="itemTotal" value=""></div>	
-							<p>£2</p>
-							<br>	
-							<button class="addCart" onclick="setData()">Add</button>
-						</div>
-					
+				<h3 id="item">12x pack chicken wings</h3>	
+				<br>
+				<div class="itemQuantity"><input type="number" id="quantity" value="0" min="0"></div>
+				<p id="unitCost"></p>
+				
+				<div class="itemTotalValue"><input id="itemTotal" value=""></div>
+				
+				<br>	
+				<button class="addCart" onclick="setData()">Add</button>
 			</div>
+				
+		</div>
 			
+		<div class="item">
+			<img id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg">
+				<div class="productDescription">				
+					
+						<h3 id="item">4x pack blueberry muffins</h3>	
+						<br>
+						<div class="itemQuantity"><input type="number" id="quantity2" value="0" min="0"></div>
+						<p id="unitCost2"></p>
+						<div class="itemTotalValue"><input id="itemTotal2" value=""></div>	
+						<!--p>£2</p-->
+						<br>	
+						<button class="addCart" onclick="setData()">Add</button>
+
+					</div>
+			</div>
 			<div class="item">
-				<img id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg"><!--/div-->
-					<div class="productDescription">
-						
-						
-							<h3 id="item">4x pack blueberry muffins</h3>	
-							<br>
-							<div class="itemQuantity"><input type="number" id="quantity2" value="0" min="0"></div>
-							<p id="unitCost2"></p>
-							<div class="itemTotalValue"><input id="itemTotal2" value=""></div>	
-							<p>£2</p>
-							<br>	
-							<button class="addCart" onclick="setData()">Add</button>
-
-						</div>
-				</div>
-				<div class="item">
-				<img id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg"><!--/div-->
-					<div class="productDescription">
-						
-						
-							<h3 id="item">8x Heineken Beer</h3>	
-								<br>
-								<div class="itemQuantity"><!--button>-</button--> <input type="number" id="quantity3" value="0" min="0"> <!--button>+</button--></div>
-								<p id="unitCost3"></p>
-								<div class="itemTotalValue"><input id="itemTotal3" value=""></div>	
-								<p>£10</p>
-								<br>	
-								<button class="addCart" onclick="setData()">Add</button>
-
-						</div>
-				</div>
+			<img id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg"><!--/div-->
+			<div class="productDescription">
 				
 				
-			
-			
-			
+					<h3 id="item">8x Heineken Beer</h3>	
+						<br>
+						<div class="itemQuantity"><input type="number" id="quantity3" value="0" min="0"> <!--button>+</button--></div>
+						<p id="unitCost3"></p>
+						<div class="itemTotalValue"><input id="itemTotal3" value=""></div>	
+						<!--p>£10</p-->
+						<br>	
+						<button class="addCart" onclick="setData()">Add</button>
+
+				</div>
+			</div>
+											
 	</section>
 	
 	
 	<section class="container">
 		<div>
 			<h3 class="productTitle">More Products</h3>
-			<hr>
+
 		</div>	
 	</section>
 
-
 <br>
-
 
 	<!--2x2 Products-->
 
@@ -241,7 +235,7 @@
 			<img id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg">
 				<div class="productDescription">
 					<h3>Kids</h3>
-					<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					<p class="itemDescription">Great deals on kids' games, toys and fun activities.</p>
 				</div>
 		</div>
 		
@@ -249,7 +243,7 @@
 			<img id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg">
 				<div class="productDescription">
 					<h3>Drinks</h3>
-					<p class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					<p class="itemDescription">Stock up on booze and drinks for the hot summer.</p>
 				</div>
 		</div>
 	
@@ -316,10 +310,5 @@
 				
 		</div>
 			
-	
-
-
-
-
 
 </body></html>
