@@ -6,8 +6,10 @@
 
 body{
 	font-size:20px;
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'Heebo', sans-serif;	
 }
+
+
 
 .cookiesBar{
 	display: flex;
@@ -44,13 +46,13 @@ body{
 }
 
 .searchQuery{
-	font-family: 'Raleway', sans-serif;
-	width: 700px;
-	height: 60px;
-	border-radius: 40px;
-	padding: 10px;
-	border: 2px solid transparent;
-	font-size: 25px;
+	font-family: 'Heebo', sans-serif;
+    width: 700px;
+    height: 60px;
+    border-radius: 20px;
+    padding: 8px;
+    border: 2px solid transparent;
+    font-size: 18;
 }
 
 
@@ -58,7 +60,7 @@ body{
 
 @media only screen and (max-width: 1000px){
 	.searchQuery{
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Heebo', sans-serif;
 		width: 200px;
 		height: 30px;
 	}
@@ -68,7 +70,7 @@ body{
 button {
 	height: 60px;
 	width: 60px;
-	border-radius: 40px;
+	border-radius: 20px;
 	background-color: #17cc3e;
 	border: none;
 	font-size: 25px;
@@ -128,7 +130,7 @@ label{
 		
 .container-menu {
 	display: flex;
-	justify-content: flex-end;
+    justify-content: center;
 	margin-left: auto;
 	background-color: #17cc3e;
 } 
@@ -145,7 +147,7 @@ label{
 		
 .menuItems{
 	justify-content: center;
-	font-size:20px;
+	font-size:18px;
 }
 
 @media only screen and (max-width:1000px){
@@ -155,7 +157,7 @@ label{
 }
 
 #brand{
-	/*width:60%;*/
+	width:60%;
 	transition: transform .2s;
 	cursor: pointer;
 	padding:10px;
@@ -177,9 +179,10 @@ label{
 		
 .searchBar{
 	display: flex;
-	justify-content: center;
-	background-color: #e9e9e9;
-	padding: 20px;}
+    justify-content: center;
+    background-color: #e9e9e9;
+    padding: 10px;
+}
 
 h2 {
 	font-size:50px;
@@ -192,7 +195,7 @@ h2 {
 }
 
 h3 {
-	font-size:30px;
+	font-size:20px;
 }
 
 
@@ -225,7 +228,7 @@ hr {
 li{
 	list-style: none;
 	padding:10px;
-	font-size:20px;
+	font-size:18px;
 	justify-content:center;
 }	
 
@@ -248,13 +251,13 @@ li{
 
 #jumbotron{
 	display: flex;
-	width:100%;
-	margin-top: 435px;	
-	height:420px;
-	padding: 30px;
-	/*border: 1px solid #292929;*/
-	color:#fff !important;
-	margin-bottom: 40px;
+    width: 100%;
+    margin-top: 280px;
+    height: 420px;
+    padding: 30px;
+    /* border: 1px solid #292929; */
+    color: #fff !important;
+	margin-bottom: 10px;
 }
 
 
@@ -262,15 +265,30 @@ li{
 @media only screen and (max-width: 1000px){
 	#jumbotron{
 		display:block;
-		margin-top: 500px;	
-
+		margin-top: 400px;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	#jumbotron{
 		display:block;
-		margin-top: 400px;	
+		margin-top: 350px;	
+
+	}
+}
+
+@media only screen and (max-width: 700px){
+	#jumbotron{
+		display:block;
+		margin-top: 320px;	
+
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#jumbotron{
+		display:block;
+		margin-top: 315px;	
 
 	}
 }
@@ -278,7 +296,15 @@ li{
 @media only screen and (max-width: 500px){
 	#jumbotron{
 		display:block;
-		margin-top: 300px;	
+		margin-top: 290px;	
+
+	}
+}
+
+@media only screen and (max-width: 400px){
+	#jumbotron{
+		display:block;
+		margin-top: 250px;	
 
 	}
 }
@@ -290,7 +316,7 @@ li{
 	/*width:50%;*/
 	width: 100%;
 	font-size:20px;
-	padding:20px;
+	/*padding:20px;*/
 	border-radius: 10px 0px 0px 10px;
 	text-align: center;
 }
@@ -312,7 +338,7 @@ li{
 
 #jumbotronImage{
 	background-color:#fff;
-	/*width:100%;*/
+	width: 100%;
 	height: 100%;
 	border-radius: 0px 5px 5px 0px;
 	cursor:pointer;
@@ -322,8 +348,7 @@ li{
 .hero-cta{
 	background-color: #fff;
 	width: auto;
-	/*padding: 0px;*/
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	margin-top: 10px;
 	color: #929090;
 	font-weight: bold;
@@ -339,16 +364,10 @@ li{
 	/* height: 100%; */
 	border-radius: 5px 5px 0px 0px; 
 	object-fit: contain;
-	margin-bottom: -6px;
+	/*margin-bottom: -6px;*/
 	cursor:pointer;
 }
 
-	
-	/*@media only screen and (max-width: 1000px){
-	#productImage{
-		display:none;
-	}
-}*/
 
 @media only screen and (max-width: 1000px){
 	#jumbotronImage{
@@ -372,9 +391,8 @@ li{
 
 #userInfo>label{
 	display:block;
-	padding:4px;
-	font-size: 25px;	
-}
+	padding:2px;
+	font-size: 20px;}
 
 #goToCart{
 	display: flex;
@@ -382,19 +400,19 @@ li{
 	background-color: #17cc3e;
 	text-align: center;
 	width: 100%;
-	position: absolute;
+	/*position: absolute;*/
 	z-index:99;
 	display:none; 
 	text-align: left;
 	position: fixed;
 	background-size: cover;
-	margin-top: -38px;
+	margin-top: -43px;
 	height: 100%;
 }
 
 
 #quantity, #quantity2, #quantity3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	text-align: center;
 	font-weight: bold;
 	padding: 4px;
@@ -404,6 +422,21 @@ li{
 	border-radius: 10px;
 }
 
+#cardType{
+	height: 180px;
+    width: 300px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding:10px;
+}
+
+#cardBody{
+	text-transform: uppercase;
+	font-weight:bold;
+	color: #929090;
+	margin-top: 60px;
+    padding: 20px;
+}
 
 #prod1, #prod2, #prod3{
 	padding: 10px;
@@ -423,6 +456,8 @@ li{
 
 #confirmationMessage{
 	display:none;
+	font-weight: bold;
+	color: #fff
 }
 
 .itemTotalValue{
@@ -435,8 +470,7 @@ li{
 	border: none;
 	background-color: #fff;
 	width: auto;
-	font-family: 'Raleway', sans-serif;
-	margin-top: 10px;
+	font-family: 'Heebo', sans-serif;
 	color: #929090;
 	font-weight: bold;
 	/*padding-bottom: 20px;
@@ -453,7 +487,25 @@ li{
 	background-color:transparent;
 	border-radius: 20px;
 	border: none;
-	padding: 10px;
+	padding: 5px;
+	/*transition: transform .2s; /* Animation */
+
+}
+
+/*#cart:hover{
+	transform: scale(1.2); 
+	cursor: pointer;
+}*/
+
+button{
+	transition: transform .2s; /* Animation */
+	cursor: pointer;
+}
+
+
+button:hover{
+transform: scale(1.1); 
+	cursor: pointer;
 }
 
 #cartSummary{
@@ -470,7 +522,6 @@ li{
 	font-size: 42px;
 	background-color: transparent;
 	border: none;
-	margin: 10px;
 	color: #fff;
 	cursor:pointer;
 }
@@ -483,7 +534,7 @@ li{
 	padding: 10px;
 	border-radius: 20px;
 	border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	margin: 0 auto;
@@ -502,7 +553,7 @@ li{
 
 #products{
 	color: #fff !important;
-	padding: 75px;
+	/*padding: 75px;*/
 	/*margin-bottom:150px;*/
 	width: 100%;
 }
@@ -510,8 +561,7 @@ li{
 @media only screen and (max-width: 1024px){
 	#products{
 		display:block;
-		padding: 120px;
-
+		padding: 65px;
 	}
 }
 
@@ -523,7 +573,7 @@ li{
 }
 
 .productTitle{
-	/*margin-top:10px;*/
+	margin-top:10px;
 	display:flex;
 	justify-content:center;
 	/*padding:20px;*/
@@ -547,18 +597,19 @@ li{
 
 
 .item{
-	transition: transform .2s;
+	/*transition: transform .2s;*/
 	padding:10px;
 	flex:1;
 	text-align:center;
 	border:30px solid transparent ;
-	width:100%
+	width: 85%;
+    margin: 0 auto;
 }
 
-.item:hover{
-	-ms-transform: scale(1.1); /* IE 9 */
+/*.item:hover{
+	-ms-transform: scale(1.1); 
 	-webkit-transform: scale(1.1);
-}
+}*/
 
 .itemDescription {
     cursor: pointer;
