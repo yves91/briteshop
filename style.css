@@ -423,18 +423,19 @@ li{
 }
 
 #cardType{
-	height: 180px;
-    width: 300px;
+	height: 116px;
+    width: 178px;
 	background-color: #fff;
 	border-radius: 10px;
-	padding:10px;
+	padding: 10px;
+    font-size: 11px;
 }
 
 #cardBody{
 	text-transform: uppercase;
 	font-weight:bold;
 	color: #929090;
-	margin-top: 60px;
+	margin-top: 5px;
     padding: 20px;
 }
 
