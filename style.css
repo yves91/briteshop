@@ -71,7 +71,7 @@ button {
 	height: 60px;
 	width: 60px;
 	border-radius: 20px;
-	background-color: #27ae60;
+	background-color: #2776ae;
 	border: none;
 	font-size: 25px;
 }
@@ -110,7 +110,7 @@ label{
 	padding:25px;
 	text-align: center;
 	color:#fff;
-	background-color: #27ae60;
+	background-color: #2776ae;
 }
 	
 @media only screen and (max-width:1000px){
@@ -130,9 +130,9 @@ label{
 		
 .container-menu {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	margin-left: auto;
-	background-color: #27ae60;
+	background-color: #2776ae;
 } 
 		
 			
@@ -140,7 +140,7 @@ label{
 	.container-menu {
 		display:inline-block;
 		display: none;
-		background-color:#27ae60;
+		background-color: #2776ae;
 		/*text-align:center;*/
 	}
 }
@@ -312,7 +312,7 @@ li{
 
 
 #jumbotronText{
-	background-color:#27ae60;
+	background-color: #2776ae;
 	/*width:50%;*/
 	width: 100%;
 	font-size:20px;
@@ -598,10 +598,9 @@ transform: scale(1.1);
 }
 
 .productDescription{
-	background-color: #27ae60;
+	background-color: #2776ae;
 	padding: 30px;
 	border-radius: 0px 0px 5px 5px;
-	
 }
 
 
