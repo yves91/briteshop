@@ -71,7 +71,7 @@ button {
 	height: 60px;
 	width: 60px;
 	border-radius: 20px;
-	background-color: #2776ae;
+	background-color: #458dc0;
 	border: none;
 	font-size: 25px;
 }
@@ -110,7 +110,7 @@ label{
 	padding:25px;
 	text-align: center;
 	color:#fff;
-	background-color: #2776ae;
+	background-color: #458dc0;
 }
 	
 @media only screen and (max-width:1000px){
@@ -132,7 +132,7 @@ label{
 	display: flex;
 	justify-content: center;
 	margin-left: auto;
-	background-color: #2776ae;
+	background-color: #458dc0;
 } 
 		
 			
@@ -180,7 +180,7 @@ label{
 .searchBar{
 	display: flex;
 	justify-content: center;
-	background-color: #eeefb5;
+	background-color: #fcfda2;
 	padding: 10px;
 }
 
@@ -314,7 +314,7 @@ li{
 
 
 #jumbotronText{
-	background-color: #2776ae;
+	background-color: #458dc0;
 	/*width:50%;*/
 	width: 100%;
 	font-size:20px;
@@ -390,7 +390,7 @@ li{
 
 
 #shoppingCart{
-	color: #2776ae;
+	color: #458dc0;
 }
 
 
@@ -407,18 +407,18 @@ li{
 #goToCart{
 	display: flex;
 	justify-content: center;
-	background-color: #2776ae;
+	background-color: #458dc0;
 	text-align: center;
 	width: 100%;
 	/*position: absolute;*/
 	z-index:99;
-	display:none; 
+	display:none;
 	text-align: left;
 	position: fixed;
 	background-size: cover;
 	margin-top: -47px;
 	height: 103%;%;
-    	overflow: scroll;
+	overflow: scroll;
 }
 
 
@@ -541,7 +541,7 @@ transform: scale(1.1);
 #submitButton{
 	display: block;
 	margin-top: 20px;
-	background-color: #2776ae;
+	background-color: #458dc0;
 	color: #fff;
 	padding: 10px;
 	border-radius: 20px;
@@ -601,7 +601,7 @@ transform: scale(1.1);
 }
 
 .productDescription{
-	background-color: #2776ae;
+	background-color: #458dc0;
 	padding: 30px;
 	border-radius: 0px 0px 5px 5px;
 }
@@ -673,7 +673,7 @@ transform: scale(1.1);
 
 #footer{
 	display: flex-end;
-	background-color: #eeefb5;
+	background-color: #fcfda2;
 	font-size:15px;
 	font-weight: bold;
 	letter-spacing: 2px;
