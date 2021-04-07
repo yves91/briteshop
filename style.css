@@ -71,7 +71,7 @@ button {
 	height: 60px;
 	width: 60px;
 	border-radius: 20px;
-	background-color: #17cc3e;
+	background-color: #27ae60;
 	border: none;
 	font-size: 25px;
 }
@@ -110,7 +110,7 @@ label{
 	padding:25px;
 	text-align: center;
 	color:#fff;
-	background-color: #17cc3e;
+	background-color: #27ae60;
 }
 	
 @media only screen and (max-width:1000px){
@@ -132,7 +132,7 @@ label{
 	display: flex;
     justify-content: center;
 	margin-left: auto;
-	background-color: #17cc3e;
+	background-color: #27ae60;
 } 
 		
 			
@@ -140,7 +140,7 @@ label{
 	.container-menu {
 		display:inline-block;
 		display: none;
-		background-color:#17cc3e;
+		background-color:#27ae60;
 		/*text-align:center;*/
 	}
 }
@@ -312,7 +312,7 @@ li{
 
 
 #jumbotronText{
-	background-color:#17cc3e;
+	background-color:#27ae60;
 	/*width:50%;*/
 	width: 100%;
 	font-size:20px;
@@ -397,7 +397,7 @@ li{
 #goToCart{
 	display: flex;
 	justify-content: center;
-	background-color: #17cc3e;
+	background-color: #27ae60;
 	text-align: center;
 	width: 100%;
 	/*position: absolute;*/
@@ -530,7 +530,7 @@ transform: scale(1.1);
 #submitButton{
 	display: block;
 	margin-top: 20px;
-	background-color: #17cc3e;
+	background-color: #27ae60;
 	color: #fff;
 	padding: 10px;
 	border-radius: 20px;
@@ -590,7 +590,7 @@ transform: scale(1.1);
 }
 
 .productDescription{
-	background-color: #17cc3e;
+	background-color: #27ae60;
 	padding: 30px;
 	border-radius: 0px 0px 5px 5px;
 	
