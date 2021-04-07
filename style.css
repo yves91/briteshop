@@ -182,7 +182,7 @@ label{
 .searchBar{
 	display: flex;
 	justify-content: center;
-	background-color: #fcfda2;
+	background-color: #f3f3f3;
 	padding: 10px;
 }
 
@@ -677,7 +677,7 @@ transform: scale(1.1);
 
 #footer{
 	display: flex-end;
-	background-color: #fcfda2;
+	background-color: #f3f3f3;
 	font-size:15px;
 	font-weight: bold;
 	letter-spacing: 2px;
