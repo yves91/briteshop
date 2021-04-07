@@ -255,10 +255,9 @@ li{
 #jumbotron{
 	display: flex;
 	width: 100%;
-	margin-top: 280px;
+	margin-top: 300px;
 	height: 420px;
-	padding: 30px;
-	/* border: 1px solid #292929; */
+	padding: 35px;
 	color: #fff !important;
 	margin-bottom: 10px;
 }
