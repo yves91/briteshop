@@ -6,7 +6,7 @@
 
 body{
 	font-size:20px;
-	font-family: 'Heebo', sans-serif;	
+	font-family: 'Poppins', sans-serif;
 }
 
 
@@ -46,8 +46,8 @@ body{
 }
 
 .searchQuery{
-	font-family: 'Heebo', sans-serif;
-    width: 700px;
+	font-family: 'Poppins', sans-serif;
+	width: 700px;
     height: 60px;
     border-radius: 20px;
     padding: 8px;
@@ -60,7 +60,7 @@ body{
 
 @media only screen and (max-width: 1000px){
 	.searchQuery{
-		font-family: 'Heebo', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		width: 200px;
 		height: 30px;
 	}
@@ -351,7 +351,7 @@ li{
 .hero-cta{
 	background-color: #fff;
 	width: auto;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin-top: 10px;
 	color: #2776ae;
 	font-weight: bold;
@@ -423,7 +423,7 @@ li{
 
 
 #quantity, #quantity2, #quantity3{
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	font-weight: bold;
 	padding: 4px;
@@ -482,7 +482,7 @@ li{
 	border: none;
 	background-color: #fff;
 	width: auto;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #2776ae;
 	font-weight: bold;
 	/*padding-bottom: 20px;
@@ -546,7 +546,7 @@ transform: scale(1.1);
 	padding: 10px;
 	border-radius: 20px;
 	border: none;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	margin: 0 auto;
@@ -614,7 +614,7 @@ transform: scale(1.1);
 	text-align:center;
 	border:30px solid transparent ;
 	width: 85%;
-    margin: 0 auto;
+    	margin: 0 auto;
 }
 
 /*.item:hover{
