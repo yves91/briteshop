@@ -201,7 +201,7 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: #2776ae;
+	color: #848484;
 }
 
 
@@ -586,7 +586,7 @@ transform: scale(1.1);
 	display:flex;
 	justify-content:center;
 	/*padding:20px;*/
-	color: #2776ae;
+	color: #848484;
 	font-size: 40px;
 }
 
@@ -658,7 +658,7 @@ transform: scale(1.1);
 }
 
 #footer > .footer-columns > .footer-col > h3{
-	color: #2776ae;
+	color: #848484;
 	text-decoration: underline;
 }
 
@@ -675,6 +675,6 @@ transform: scale(1.1);
 	font-weight: bold;
 	letter-spacing: 2px;
 	/*height:500px;*/
-	color: #2776ae;
+	color: #848484;
 	margin-top: 80px;
 }
