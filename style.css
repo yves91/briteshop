@@ -40,7 +40,7 @@ body{
 }
 
 #timeGreeting{
-	color:#929090;
+	color:#848484;
 	padding:5px;
 	font-size:30px;
 }
@@ -179,9 +179,9 @@ label{
 		
 .searchBar{
 	display: flex;
-    justify-content: center;
-    background-color: #e9e9e9;
-    padding: 10px;
+	justify-content: center;
+	background-color: #e9e9e9;
+	padding: 10px;
 }
 
 h2 {
@@ -201,7 +201,7 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: #929090;
+	color: #848484;
 }
 
 
@@ -251,12 +251,12 @@ li{
 
 #jumbotron{
 	display: flex;
-    width: 100%;
-    margin-top: 280px;
-    height: 420px;
-    padding: 30px;
-    /* border: 1px solid #292929; */
-    color: #fff !important;
+	width: 100%;
+	margin-top: 280px;
+	height: 420px;
+	padding: 30px;
+	/* border: 1px solid #292929; */
+	color: #fff !important;
 	margin-bottom: 10px;
 }
 
@@ -350,7 +350,7 @@ li{
 	width: auto;
 	font-family: 'Heebo', sans-serif;
 	margin-top: 10px;
-	color: #929090;
+	color: #848484;
 	font-weight: bold;
 	padding-bottom: 50px;
 	padding-top: 20px;
@@ -424,19 +424,19 @@ li{
 
 #cardType{
 	height: 116px;
-    width: 178px;
+	width: 178px;
 	background-color: #fff;
 	border-radius: 10px;
 	padding: 10px;
-    font-size: 11px;
+	font-size: 11px;
 }
 
 #cardBody{
 	text-transform: uppercase;
 	font-weight:bold;
-	color: #929090;
+	color: #848484;
 	margin-top: 5px;
-    padding: 20px;
+	padding: 20px;
 }
 
 #prod1, #prod2, #prod3{
@@ -472,7 +472,7 @@ li{
 	background-color: #fff;
 	width: auto;
 	font-family: 'Heebo', sans-serif;
-	color: #929090;
+	color: #848484;
 	font-weight: bold;
 	/*padding-bottom: 20px;
 	padding-top: 20px;*/
@@ -516,7 +516,7 @@ transform: scale(1.1);
 	margin:10px;
 	border-radius: 10px;
 	font-weight: bold;
-	color: #929090;
+	color: #848484;
 }
 
 #cartClose{
@@ -578,14 +578,14 @@ transform: scale(1.1);
 	display:flex;
 	justify-content:center;
 	/*padding:20px;*/
-	color:#929090;
+	color: #848484;
 	font-size: 40px;
 }
 
 @media only screen and (max-width: 1000px){
 	.productTitle{
 		justify-content:center;
-		color:#929090;
+		color:#848484;
 	}
 }
 
@@ -651,7 +651,7 @@ transform: scale(1.1);
 }
 
 #footer > .footer-columns > .footer-col > h3{
-	color: #929090;
+	color: #848484;
 	text-decoration: underline;
 }
 
@@ -668,6 +668,6 @@ transform: scale(1.1);
 	font-weight: bold;
 	letter-spacing: 2px;
 	/*height:500px;*/
-	color: #929090;
+	color: #848484;
 	margin-top: 80px;
 }
