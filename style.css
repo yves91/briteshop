@@ -415,6 +415,7 @@ li{
 	background-size: cover;
 	margin-top: -43px;
 	height: 100%;
+    	overflow: scroll;
 }
 
 
