@@ -37,7 +37,7 @@
 			
 
 <div id="goToCart">
-<button class="cart-close" id="cartClose" onclick="closeCart()">X</button>	
+<button class="cart-close" id="cartClose" onclick="closeCart()" aria-pressed>X</button>	
 
 <div id="cartTitle"><h2>Your Basket</h2><h2></h2></div>
 
@@ -119,8 +119,8 @@
 				<li>   
 					<div class="searchAndCart">
 						<input type="text" class="searchQuery" placeholder="Search" name="search">
-						<button type="submit"><i class="fa fa-search"></i></button>
-						<button id="cart" onclick="openCart()"><i class="fa fa-shopping-cart" id="shoppingCart"></i></button>
+						<button type="submit" aria-pressed><i class="fa fa-search"></i></button>
+						<button id="cart" onclick="openCart()" aria-pressed><i class="fa fa-shopping-cart" id="shoppingCart"></i></button>
 					</div>
 				</li>
 			</div>
@@ -145,7 +145,7 @@
 		<div id="jumbotronText">
 		<h2>Great deals this weekend!</h2><h2>
 		<p class="jumboSub">Buy one get one free on selected items</p>
-		<button class="hero-cta">See Deals</button>
+		<button class="hero-cta" aria-pressed>See Deals</button>
 		</h2></div>
 		
 
@@ -177,7 +177,7 @@
 				<div class="itemTotalValue"><input id="itemTotal" value=""></div>
 				
 				<br>	
-				<button class="addCart" onclick="setData()">Add</button>
+				<button class="addCart" onclick="setData()" aria-pressed>Add</button>
 			</div>
 				
 		</div>
@@ -193,7 +193,7 @@
 						<div class="itemTotalValue"><input id="itemTotal2" value=""></div>	
 						<!--p>£2</p-->
 						<br>	
-						<button class="addCart" onclick="setData()">Add</button>
+						<button class="addCart" onclick="setData()" aria-pressed>Add</button>
 
 					</div>
 			</div>
@@ -209,7 +209,7 @@
 						<div class="itemTotalValue"><input id="itemTotal3" value=""></div>	
 						<!--p>£10</p-->
 						<br>	
-						<button class="addCart" onclick="setData()">Add</button>
+						<button class="addCart" onclick="setData()"aria-pressed>Add</button>
 
 				</div>
 			</div>
@@ -299,7 +299,7 @@
 			<div class="searchBar">
 				<div>
 					<input type="text" class="searchQuery" placeholder="Search" name="search">
-					<button type="submit"><i class="fa fa-search"></i></button>
+					<button type="submit" aria-pressed><i class="fa fa-search"></i></button>
 				</div>
 			</div>
 			
