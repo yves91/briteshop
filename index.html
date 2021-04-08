@@ -1,315 +1,258 @@
-<html><head>
-
-<title>Briteshop | Perfect for your pockets!</title>
-
-<link rel="stylesheet" href="style.css">
-
-<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script-->
-
-<script src="script.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
-
-<!--Header & menu-->
-
-<body><div id="main">
-
-<header>
-	<div>
-		<ul class="cookiesBar">
-			<li><a class="cookiesBarText" href="#">Sign In</a></li>
-			<li><a class="cookiesBarText" href="#">Store locator</a></li>
-			<li><a class="cookiesBarText" href="#">Contact Us</a></li>
-			<li><a class="cookiesBarText" href="#">FAQ's</a></li>
-			
-		</ul>	
-	</div>
-	
-			
-
-<div id="goToCart">
-<button class="cart-close" id="cartClose" onclick="closeCart()" aria-pressed>X</button>	
-
-<div id="cartTitle"><h2>Your Basket</h2><h2></h2></div>
-
-	<div id="cart">	
-	
-		<form id="userInfo">
-			<label for="cardnumber">Card number:</label>
-			<input type="text" id="cardnumber" name="cardnumber" value="" maxlength="16" oninput="cardNumber()">			
-				
-			<!--label for="lname">Last name:</label>
-			<input type="text" id="lname" name="lname" value=""-->
-						
-			<label for="cardholder">Card nameholder:</label>
-			<input type="text" id="cardholder" name="cardholder" value="" oninput="cardHolder()">
-			
-			<label for="cvvnumber">CVV number:</label>
-			<input type="text" id="cvvnumber" name="cvvnumber" value="" maxlength="3">
-			
-			<label for="address1">Address Line 1:</label>
-			<input type="text" id="address1" name="address1" value="">
-			
-			<label for="address2">Address Line 2:</label>
-			<input type="text" id="address2" name="address2" value="">
-			
-			<label for="emailaddress">Email Address:</label>
-			<input type="text" id="emailaddress" name="emailaddress" value="">
-		
-		<br><br>
-
-		<div id="cardType">
-			<div id="cardBody">
-				<p id="cardNumber"></p>
-				<p id="cardCompanyType"></p>
-				<p id="cardPersonName"></p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Briteshop | Perfect for your pockets!</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js">
+	</script>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head><!--Header & menu-->
+<body>
+	<div id="main">
+		<header>
+			<div>
+				<ul class="cookiesBar">
+					<li>
+						<a class="cookiesBarText" href="#">Sign In</a>
+					</li>
+					<li>
+						<a class="cookiesBarText" href="#">Store locator</a>
+					</li>
+					<li>
+						<a class="cookiesBarText" href="#">Contact Us</a>
+					</li>
+					<li>
+						<a class="cookiesBarText" href="#">FAQ's</a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		
-		</form>
-			
-	<!--div id="emptyCartText"><p>Your cart is empty</p></div-->
-
-	<div id="cartSummary">
-		<ul id="cart1">
-			<li id="cart-item"></li>
-			<li id="cart-quantity"></li>
-			<li id="cart-currency"></li>
-			<hr>
-		</ul>
-		
-		<ul id="cart2">
-			<li id="cart-item-2"></li>
-			<li id="cart-quantity-2"></li>
-			<li id="cart-currency-2"></li>
-			<hr>
-		</ul>
-		
-		<ul id="cart3">
-			<li id="cart-item-3"></li>
-			<li id="cart-quantity-3"></li>
-			<li id="cart-currency-3"></li>
-			<hr>
-		</ul>	
-		
-		<input id="submitButton" type="submit" onclick="confirmPurchase()">
-
-	</div>
-	
-	<p id="confirmationMessage">Thank you for shopping with Briteshop. Your order will soon be dispatched.</p>
-
-	</div>
-	
-</div>
-	
-	<div class="nav">			
-		<li class="menuItems"><img id="brand" src="https://yves91.github.io/briteshop/assets/briteshop-blue-logo.png" alt="briteshop-logo"></li>
-			
-			<div class="searchBar">
-
-				<li>   
-					<div class="searchAndCart">
-						<input type="text" class="searchQuery" placeholder="Search" name="search">
-						<button type="submit" aria-pressed><i class="fa fa-search"></i></button>
-						<button id="cart" onclick="openCart()" aria-pressed><i class="fa fa-shopping-cart" id="shoppingCart"></i></button>
+			<div id="goToCart">
+				<button aria-pressed="" class="cart-close" id="cartClose" onclick="closeCart()">X</button>
+				<div id="cartTitle">
+					<h2>Your Basket</h2>
+					<h2></h2>
+				</div>
+				<div id="cart">
+					<form id="userInfo" name="userInfo">
+						<label for="cardnumber">Card number:</label> <input id="cardnumber" maxlength="16" name="cardnumber" oninput="cardNumber()" type="text" value=""> <!--label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value=""-->
+						 <label for="cardholder">Card nameholder:</label> <input id="cardholder" name="cardholder" oninput="cardHolder()" type="text" value=""> <label for="cvvnumber">CVV number:</label> <input id="cvvnumber" maxlength="3" name="cvvnumber" type="text" value=""> <label for="address1">Address Line 1:</label> <input id="address1" name="address1" type="text" value=""> <label for="address2">Address Line 2:</label> <input id="address2" name="address2" type="text" value=""> <label for="emailaddress">Email Address:</label> <input id="emailaddress" name="emailaddress" type="text" value=""><br>
+						<br>
+						<div id="cardType">
+							<div id="cardBody">
+								<p id="cardNumber"></p>
+								<p id="cardCompanyType"></p>
+								<p id="cardPersonName"></p>
+							</div>
+						</div>
+					</form><!--div id="emptyCartText"><p>Your cart is empty</p></div-->
+					<div id="cartSummary">
+						<ul id="cart1">
+							<li id="cart-item"></li>
+							<li id="cart-quantity"></li>
+							<li id="cart-currency"></li>
+							<li style="list-style: none; display: inline">
+								<hr>
+							</li>
+						</ul>
+						<ul id="cart2">
+							<li id="cart-item-2"></li>
+							<li id="cart-quantity-2"></li>
+							<li id="cart-currency-2"></li>
+							<li style="list-style: none; display: inline">
+								<hr>
+							</li>
+						</ul>
+						<ul id="cart3">
+							<li id="cart-item-3"></li>
+							<li id="cart-quantity-3"></li>
+							<li id="cart-currency-3"></li>
+							<li style="list-style: none; display: inline">
+								<hr>
+							</li>
+						</ul><input id="submitButton" onclick="confirmPurchase()" type="submit">
 					</div>
-				</li>
+					<p id="confirmationMessage">Thank you for shopping with Briteshop. Your order will soon be dispatched.</p>
+				</div>
 			</div>
-	
-				<label for="toggle">☰</label>
-				<input type="checkbox" id="toggle">
-		<ul class="container-menu">
-				<li class="menuItems"><a href="#">Groceries</a></li>
-				<li class="menuItems"><a href="#">Club Card</a></li>
-				<li class="menuItems"><a href="#">Special Offers</a></li>
-				<li class="menuItems"><a href="#">Home Delivery</a></li>
-		</ul>
-	</div>
-			
-				
-		
-	</header></div>
-	
-	
-	<!--Jumbotron section-->
+			<div class="nav">
+				<ul>
+					<li class="menuItems"><img alt="briteshop-logo" id="brand" src="https://yves91.github.io/briteshop/assets/briteshop-blue-logo.png"></li>
+					<li style="list-style: none; display: inline">
+						<div class="searchBar">
+							<ul>
+								<li>
+									<div class="searchAndCart">
+										<input class="searchQuery" name="search" placeholder="Search" type="text"> <button aria-pressed="" type="submit"><i class="fa fa-search"></i></button> <button aria-pressed="" id="cart" onclick="openCart()"><i class="fa fa-shopping-cart" id="shoppingCart"></i></button>
+									</div>
+								</li>
+							</ul>
+						</div><label for="toggle">☰</label> <input id="toggle" type="checkbox">
+						<ul class="container-menu">
+							<li class="menuItems">
+								<a href="#">Groceries</a>
+							</li>
+							<li class="menuItems">
+								<a href="#">Club Card</a>
+							</li>
+							<li class="menuItems">
+								<a href="#">Special Offers</a>
+							</li>
+							<li class="menuItems">
+								<a href="#">Home Delivery</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</div><!--Jumbotron section-->
 	<section class="container" id="jumbotron">
 		<div id="jumbotronText">
-		<h2>Great deals this weekend!</h2><h2>
-		<p class="jumboSub">Buy one get one free on selected items</p>
-		<button class="hero-cta" aria-pressed>See Deals</button>
-		</h2></div>
-		
-
-		<div id="jumbotronImage"><img id="jumbotronImage" src="https://yves91.github.io/briteshop/assets/heroimage.jpg" alt="briteshop-hero-image"></div>
+			<h2>Great deals this weekend!</h2>
+			<h2></h2>
+			<p class="jumboSub">Buy one get one free on selected items</p><button aria-pressed="" class="hero-cta">See Deals</button>
+		</div>
+		<div id="jumbotronImage"><img alt="briteshop-hero-image" id="jumbotronImage" src="https://yves91.github.io/briteshop/assets/heroimage.jpg"></div>
 	</section>
-
-
 	<section class="container">
 		<div>
 			<h3 class="productTitle">Great Deals</h3>
-		</div>	
-	</section>
-	
-
-		
-	<!--3x3 Products - PURCHASE-->
-	<section class="container" id="products">
-	
-		<div class="item">
-			
-			<img id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg" alt="briteshop-chicken-wings">
-				<div class="productDescription">
-				
-				<h3 id="item">12x pack chicken wings</h3>	
-				<br>
-				<div class="itemQuantity"><input type="number" id="quantity" for="quantity" value="0" min="0"></div>
-				<p id="unitCost"></p>
-				
-				<div class="itemTotalValue"><input id="itemTotal" value=""></div>
-				<p>£2</p>
-				<br>	
-				<button class="addCart" onclick="setData()" aria-pressed>Add</button>
-			</div>
-				
 		</div>
-			
+	</section><!--3x3 Products - PURCHASE-->
+	<section class="container" id="products">
 		<div class="item">
-			<img id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg" alt="briteshop-muffins">
-				<div class="productDescription">				
-					
-						<h3 id="item">4x pack blueberry muffins</h3>	
-						<br>
-						<div class="itemQuantity"><input type="number" id="quantity2" for="quantity2" value="0" min="0"></div>
-						<p id="unitCost2"></p>
-						<div class="itemTotalValue"><input id="itemTotal2" value=""></div>	
-						<p>£2</p>
-						<br>	
-						<button class="addCart" onclick="setData()" aria-pressed>Add</button>
-
-					</div>
-			</div>
-			<div class="item">
-			<img id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg" alt="briteshop-beer"><!--/div-->
+			<img alt="briteshop-chicken-wings" id="productImage" src="https://yves91.github.io/briteshop/assets/chicken-wings.jpg">
 			<div class="productDescription">
-				
-				
-					<h3 id="item">8x Heineken Beer</h3>	
-						<br>
-						<div class="itemQuantity"><input type="number" id="quantity3" for="quantity3" value="0" min="0"> <!--button>+</button--></div>
-						<p id="unitCost3"></p>
-						<div class="itemTotalValue"><input id="itemTotal3" value=""></div>	
-						<p>£10</p>
-						<br>	
-						<button class="addCart" onclick="setData()"aria-pressed>Add</button>
-
+				<h3 id="item">12x pack chicken wings</h3><br>
+				<div class="itemQuantity">
+					<input id="quantity" min="0" type="number" value="0">
 				</div>
+				<p id="unitCost"></p>
+				<div class="itemTotalValue">
+					<input id="itemTotal" value="">
+				</div>
+				<p>£2</p><br>
+				<button aria-pressed="" class="addCart" onclick="setData()">Add</button>
 			</div>
-											
+		</div>
+		<div class="item">
+			<img alt="briteshop-muffins" id="productImage" src="https://yves91.github.io/briteshop/assets/muffins.jpg">
+			<div class="productDescription">
+				<h3 id="item">4x pack blueberry muffins</h3><br>
+				<div class="itemQuantity">
+					<input id="quantity2" min="0" type="number" value="0">
+				</div>
+				<p id="unitCost2"></p>
+				<div class="itemTotalValue">
+					<input id="itemTotal2" value="">
+				</div>
+				<p>£2</p><br>
+				<button aria-pressed="" class="addCart" onclick="setData()">Add</button>
+			</div>
+		</div>
+		<div class="item">
+			<img alt="briteshop-beer" id="productImage" src="https://yves91.github.io/briteshop/assets/heineken.jpg"><!--/div-->
+			<div class="productDescription">
+				<h3 id="item">8x Heineken Beer</h3><br>
+				<div class="itemQuantity">
+					<input id="quantity3" min="0" type="number" value="0"> <!--button>+</button-->
+				</div>
+				<p id="unitCost3"></p>
+				<div class="itemTotalValue">
+					<input id="itemTotal3" value="">
+				</div>
+				<p>£10</p><br>
+				<button aria-pressed="" class="addCart" onclick="setData()">Add</button>
+			</div>
+		</div>
 	</section>
-	
-	
 	<section class="container">
 		<div>
 			<h3 class="productTitle">More Products</h3>
-
-		</div>	
-	</section>
-
-<br>
-
+		</div>
+	</section><br>
 	<!--2x2 Products-->
-
 	<section class="container" id="products">
-
-	
 		<div class="item">
-			<img id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg" alt="briteshop-toys">
-				<div class="productDescription">
-					<h3>Kids</h3>
-					<p class="itemDescription">Great deals on kids' games, toys and fun activities.</p>
-				</div>
+			<img alt="briteshop-toys" id="productImage" src="https://yves91.github.io/briteshop/assets/toys.jpg">
+			<div class="productDescription">
+				<h3>Kids</h3>
+				<p class="itemDescription">Great deals on kids' games, toys and fun activities.</p>
+			</div>
 		</div>
-		
 		<div class="item">
-			<img id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg" alt="briteshop-alcohol">
-				<div class="productDescription">
-					<h3>Drinks</h3>
-					<p class="itemDescription">Stock up on booze and drinks for the hot summer.</p>
-				</div>
+			<img alt="briteshop-alcohol" id="productImage" src="https://yves91.github.io/briteshop/assets/beverage.jpg">
+			<div class="productDescription">
+				<h3>Drinks</h3>
+				<p class="itemDescription">Stock up on booze and drinks for the hot summer.</p>
+			</div>
 		</div>
-	
-	</section>
-	
-
-	<!--Footer-->
-
+	</section><!--Footer-->
 	<div id="footer">
-	
 		<div class="footer-columns">
-		
 			<div class="footer-col">
 				<h3>Help</h3>
+				<div style="margin-left: 2em">
+					<a href="#">
 					<ul>
-						<a href="#"><li>Help &amp; FAQs</li></a>		
-						<a href="#"><li>Contact us</li></a>
-					</ul>
+						<li>Help &amp; FAQs</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Contact us</li>
+					</ul></a>
 				</div>
-
-				
-
+			</div>
 			<div class="footer-col">
 				<h3>About</h3>
+				<div style="margin-left: 2em">
+					<a href="#">
 					<ul>
-						<a href="#"><li>Vacancies</li></a>	
-						<a href="#"><li>Careers</li></a>
-						<a href="#"><li>Environmental mission</li></a>
-					</ul>
+						<li>Vacancies</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Careers</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Environmental mission</li>
+					</ul></a>
 				</div>
-			
+			</div>
 			<div class="footer-col">
 				<h3>Our Website</h3>
+				<div style="margin-left: 2em">
+					<a href="#">
 					<ul>
-						<a href="#"><li>Terms &amp; Conditions</li></a>		
-						<a href="#"><li>Privacy &amp; cookies policy</li></a>
-						<a href="#"><li>Sitemap</li></a>
-						<a href="#"><li>Accessibility</li></a>
-
-					</ul>
+						<li>Terms &amp; Conditions</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Privacy &amp; cookies policy</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Sitemap</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Accessibility</li>
+					</ul></a>
 				</div>
-
+			</div>
 			<div class="footer-col">
 				<h3>Useful links</h3>
+				<div style="margin-left: 2em">
+					<a href="#">
 					<ul>
-						<a href="#"><li>Store locator</li></a>		
-						<a href="#"><li>Refunds &amp; Exchanges</li></a>
-					</ul>
-				</div>
-				
-		</div>
-		
-			<div class="searchBar">
-				<div>
-					<input type="text" class="searchQuery" placeholder="Search" name="search">
-					<button type="submit" aria-pressed><i class="fa fa-search"></i></button>
+						<li>Store locator</li>
+						<li style="list-style: none; display: inline"></li>
+						<li>Refunds &amp; Exchanges</li>
+					</ul></a>
 				</div>
 			</div>
-			
-			<div class="theme-designer">
-				<p>Yves Fostel Web Designs 2020</p>
-			</div>
-
-				
 		</div>
-			
-
+		<div class="searchBar">
+			<div>
+				<input class="searchQuery" name="search" placeholder="Search" type="text"> <button aria-pressed="" type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+		<div class="theme-designer">
+			<p>Yves Fostel Web Designs 2020</p>
+		</div>
+	</div>
 </body>
 </html>
