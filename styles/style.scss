@@ -172,6 +172,13 @@ label {
 	transition: transform .2s;
 	cursor: pointer;
 	padding:10px;
+    animation-name: logoEnter;
+    animation-duration: 1.5s;
+}
+
+@keyframes logoEnter{
+    from{transform: translateY(-300px)}
+    to{transform: translateY(0px)}
 }
 			
 #brand:hover {
@@ -260,6 +267,13 @@ li {
 	/* border: 1px solid #292929; */
 	color: $colorWhite !important;
 	margin-bottom: 10px;
+    animation-name: jumbotronEnter;
+    animation-duration: 2s;
+}
+
+@keyframes jumbotronEnter{
+    from{transform: translateX(-1000px)}
+    to{transform: translateX(0px)}
 }
 
 /* START - This will ensure the gap between jumbotron and responsive navbar is not too wide */
@@ -364,7 +378,14 @@ li {
 	border-radius: 50px 5px 0px 0px;
 	object-fit: contain;
 	cursor:pointer;
+    opacity: 1;
+    transition: 0.3s;
 }
+
+#productImage:hover{
+    opacity: 0.5;
+}
+
 
 @media only screen and (max-width: 1000px){
 	#jumbotronImage {
