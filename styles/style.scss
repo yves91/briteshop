@@ -69,8 +69,8 @@ body {
     height: 60px;
     border-radius: 20px;
     padding: 8px;
-    border: 2px solid transparent;
-    font-size: 18px;
+	border: 5px solid #f3f3f3;
+	font-size: 18px;
 } 
 
 @media only screen and (max-width: 1000px){
@@ -86,7 +86,7 @@ button {
 	width: 60px;
 	border-radius: 20px;
 	background-color: $mainBlue;
-	border: none;
+	border: 5px solid #f3f3f3;
 	font-size: 25px;
 }
 
@@ -602,7 +602,6 @@ button:hover {
 	background-color: $mainBlue;
 	padding: 30px;
 	border-radius: 0px 0px 5px 5px;
-	margin-top: -9px;
 }
 
 .item{
