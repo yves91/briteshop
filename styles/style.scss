@@ -276,55 +276,7 @@ li {
     to{transform: translateX(0px)}
 }
 
-/* START - This will ensure the gap between jumbotron and responsive navbar is not too wide */
-@media only screen and (max-width: 1000px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 400px;*/
-	}
-}
 
-@media only screen and (max-width: 800px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 350px;*/	
-
-	}
-}
-
-@media only screen and (max-width: 700px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 320px;*/
-
-	}
-}
-
-@media only screen and (max-width: 600px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 315px;*/
-
-	}
-}
-
-@media only screen and (max-width: 500px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 290px;*/		
-   		margin-bottom: 60px;
-
-	}
-}
-
-@media only screen and (max-width: 400px){
-	#jumbotron {
-		display:block;
-		/*margin-top: 250px;*/
-		height: 525px;
-	}
-}
-/* END - This will ensure the gap between jumbotron and responsive navbar is not too wide */
 
 #jumbotronText {
 	background-color: $mainBlue;
