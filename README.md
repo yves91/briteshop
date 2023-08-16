@@ -1,5 +1,5 @@
 # briteshop
-This site has been designed and built in HTML, SCSS and JavaScript, using the Tesco website for reference. 
+This site has been designed and built in HTML, SCSS and JavaScript, using the Tesco website as a reference point. 
 
 For demonstration purposes, it has a functional shopping cart, built with vanilla JavaScript. The theme is aimed at websites with e-commerce capabilities, but is also suitable for website without such functionalities. With a mobile-first responsive design, this design is clean and easy to navigate on desktop, tablet and mobile viewports.
 
